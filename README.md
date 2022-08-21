@@ -1,6 +1,6 @@
 # vue-animation
 
-Built a reusable Animation component with Vue 3 and Composition API.
+A reusable List Animation built with Vue 3 and Composition API.
 
 ## Project Screenshots
 
