@@ -30,7 +30,7 @@ const addTodo = (payload) => {
     todo: payload,
     id: uid(),
   });
-  successTodo();
+  // successTodo();
 };
 
 const showError = ref(false);
@@ -44,13 +44,13 @@ const errorTodo = () => {
   }, 3000);
 };
 
-const successTodo = () => {
-  showError.value = false;
-  showSuccess.value = true;
-  setTimeout(() => {
-    showSuccess.value = false;
-  }, 3000);
-};
+// const successTodo = () => {
+//   showError.value = false;
+//   showSuccess.value = true;
+//   setTimeout(() => {
+//     showSuccess.value = false;
+//   }, 3000);
+// };
 
 const removeTodo = (payload) => {
   todos.value = todos.value.filter((todo) => todo.id !== payload.id);
